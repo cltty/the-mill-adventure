@@ -1,0 +1,29 @@
+@import "../../../../styles.scss";
+
+.footer-container {
+  margin-top: $spacing-50;
+  margin-bottom: $spacing-30;
+  display: grid;
+  gap: $spacing-24;
+  grid-template-areas: "one one two three four";
+
+  &__item:nth-child(1) {
+    grid-area: one;
+  }
+
+  &__item:nth-child(2) {
+    grid-area: two;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item:nth-child(3) {
+    grid-area: three;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item:nth-child(4) {
+    grid-area: four;
+  }
+}

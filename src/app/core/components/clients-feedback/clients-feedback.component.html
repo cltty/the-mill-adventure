@@ -1,0 +1,20 @@
+<c-carousel
+  class="client-feedback-container"
+  [interval]="5000"
+  transition="slide"
+>
+  <h3>What clients say about us</h3>
+  <c-carousel-inner>
+    <c-carousel-item
+      class="client-feedback-container__row"
+      *ngFor="let feedback of clientFeedback; index as i"
+    >
+      <app-client-feedback-card
+        [clientDetails]="clientFeedback[i]"
+      ></app-client-feedback-card>
+      <app-client-feedback-card
+        [clientDetails]="clientFeedback[(i + 1) % clientFeedback.length]"
+      ></app-client-feedback-card>
+    </c-carousel-item>
+  </c-carousel-inner>
+</c-carousel>

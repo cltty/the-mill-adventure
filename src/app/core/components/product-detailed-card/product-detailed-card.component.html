@@ -1,0 +1,21 @@
+<h3>{{ product?.name }}</h3>
+
+<article class="product">
+  <section class="product__image">
+    <img src="{{ product?.pictureUrl }}" alt="" />
+  </section>
+
+  <section class="product__description">
+    <p>{{ product?.description }}</p>
+  </section>
+
+  <section class="product__financial">
+    <p>{{ product?.price }} $</p>
+
+    <div>
+      <button cButton color="success">Buy</button>
+      <button cButton color="danger">Save</button>
+    </div>
+    <app-midnight-countdown-timer></app-midnight-countdown-timer>
+  </section>
+</article>

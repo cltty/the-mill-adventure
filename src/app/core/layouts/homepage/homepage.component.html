@@ -1,0 +1,14 @@
+<div class="homepage-container">
+  <app-homepage-carousel></app-homepage-carousel>
+
+  <app-basic-banner></app-basic-banner>
+
+  <app-top-categories></app-top-categories>
+
+  <app-category-picker
+    *ngIf="showCategoryModal"
+    (closeEventEmitter)="onTriggerCategoryModal(false)"
+  ></app-category-picker>
+  
+  <app-clients-feedback></app-clients-feedback>
+</div>

@@ -1,0 +1,13 @@
+<ng-container *ngIf="contentLoaded | async; else loadingSpinner">
+  <a href="/home">Home</a>
+
+  <app-product-detailed-card [product]="product"></app-product-detailed-card>
+
+  <app-similar-products
+    [similarProducts]="similarProducts"
+  ></app-similar-products>
+</ng-container>
+
+<ng-template #loadingSpinner>
+  <c-spinner></c-spinner>
+</ng-template>

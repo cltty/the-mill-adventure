@@ -1,0 +1,32 @@
+@import "../../../styles.scss";
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: $spacing-300;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  img {
+    width: $spacing-300;
+    height: $spacing-300;
+    object-fit: cover;
+  }
+
+  section {
+    padding: $spacing-10;
+
+    p:nth-child(3) {
+      text-align: end;
+      color: $dolar-green;
+    }
+  }
+
+  :hover {
+    h5 {
+      cursor: pointer;
+      letter-spacing: $spacing-2;
+      color: $light-blue;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}

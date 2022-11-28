@@ -1,0 +1,21 @@
+@import "../../../../styles.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 $spacing-60 $spacing-50 $spacing-60;
+  border-bottom: 0px;
+
+  &__logo {
+    display: flex;
+    
+    span {
+      margin: auto;
+      font-size: xxx-large;
+    }
+  }
+
+  &__icons {
+    display: flex;
+  }
+}

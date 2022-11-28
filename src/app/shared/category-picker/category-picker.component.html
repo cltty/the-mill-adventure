@@ -1,0 +1,23 @@
+<c-modal
+  [keyboard]="false"
+  [transition]="false"
+  backdrop="static"
+  class="modal-container d-block show"
+  id="modalStatic"
+>
+  <c-modal-header>
+    <h5 cModalTitle>Category list</h5>
+    <button cButtonClose (click)="onClose()"></button>
+  </c-modal-header>
+  <c-modal-body>
+    <a
+      *ngFor="let category of categories"
+      cTooltip="Check this category."
+      cTooltipPlacement="right"
+      (click)="onCategoryClick(category)"
+    >
+      {{ category.name }}
+    </a>
+  </c-modal-body>
+</c-modal>
+<div class="modal-background"></div>

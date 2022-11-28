@@ -1,0 +1,8 @@
+@import "../../../../styles.scss";
+
+c-spinner {
+  margin: auto;
+  display: flex;
+  width: $spacing-100;
+  height: $spacing-100;
+}

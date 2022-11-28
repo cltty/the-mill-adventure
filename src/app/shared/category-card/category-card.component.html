@@ -1,0 +1,7 @@
+<article *ngIf="category">
+  <img src="{{ category.imgUrl }}" alt="category" />
+  <section (click)="onClick()">
+    <h5>{{ category.name }}</h5>
+    <p>{{ category.productsCount }} products.</p>
+  </section>
+</article>

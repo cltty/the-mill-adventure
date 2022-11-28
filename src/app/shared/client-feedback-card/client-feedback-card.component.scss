@@ -1,0 +1,14 @@
+@import "../../../styles.scss";
+
+.feedback-card {
+  padding: $spacing-10;
+  border-radius: $spacing-5;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  p {
+    border-left: $spacing-2 solid $light-blue-2;
+    padding-left: $spacing-7;
+    color: $dark-blue;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,15 @@
+<article *ngIf="product">
+  <img src="{{ product.pictureUrl }}" alt="" />
+  <section>
+    <h5 (click)="onProductClick()">{{ product.name }}</h5>
+    <p>
+      {{
+        product.description.length > 100
+          ? (product.description | slice: 0:100) + "..."
+          : product.description
+      }}
+    </p>
+    <p>{{ product.price }} $</p>
+    <app-midnight-countdown-timer></app-midnight-countdown-timer>
+  </section>
+</article>

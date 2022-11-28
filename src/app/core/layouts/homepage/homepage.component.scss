@@ -1,0 +1,14 @@
+@import "../../../../styles.scss";
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+
+  app-homepage-carousel,
+  app-basic-banner,
+  app-top-categories,
+  app-category-picker,
+  app-clients-feedback {
+    margin-top: $spacing-40;
+  }
+}

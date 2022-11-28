@@ -1,0 +1,20 @@
+.banner {
+  display: flex;
+
+  &__item {
+    display: flex;
+    margin: auto;
+
+    div {
+      margin: auto;
+
+      h5 {
+        margin-bottom: 0px;
+      }
+
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

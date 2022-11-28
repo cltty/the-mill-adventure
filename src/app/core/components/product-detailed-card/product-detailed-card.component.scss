@@ -1,0 +1,40 @@
+@import "../../../../styles.scss";
+
+h3 {
+  text-align: center;
+}
+
+.product {
+  display: flex;
+  padding: $spacing-20;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px $spacing-2 $spacing-5 -$spacing-1,
+    rgba(0, 0, 0, 0.3) 0px $spacing-1 $spacing-3 -$spacing-1;
+
+  &__description {
+    padding: 0 $spacing-20 0 $spacing-20;
+  }
+
+  &__financial {
+    margin-top: auto;
+
+    p {
+      font-weight: 600;
+      text-align: end;
+      color: $dolar-green;
+    }
+
+    div {
+      display: flex;
+
+      > button {
+        margin-right: $spacing-5;
+      }
+
+      button:hover {
+        color: $white;
+        box-shadow: 0px $spacing-50 $spacing-40 -$spacing-10 rgba(0, 0, 0, 0.57);
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+}
