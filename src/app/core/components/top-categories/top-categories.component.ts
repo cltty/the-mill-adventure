@@ -11,7 +11,7 @@ import { ShopService } from '../../services/shop/shop.service';
 })
 export class TopCategoriesComponent implements OnInit {
   categories: Category[] | undefined;
-  topCategories: Category[] | undefined;
+  topCategories: Category[] | undefined ;
   showCategoryModal: boolean = false;
   contentLoaded: Promise<boolean> | undefined;
   componentDestroyed$: Subject<void> = new Subject<void>();
